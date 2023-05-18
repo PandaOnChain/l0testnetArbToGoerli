@@ -7,9 +7,9 @@ RPC = "https://rpc.ankr.com/arbitrum"
 web3 = Web3(Web3.HTTPProvider(RPC))
 
 
-bridge_abi = json.load(open('./Contracts/bridge_abi.json'))
+bridge_abi = json.load(open('./bridge_abi.json'))
 endpoint_abi = json.load(
-    open('./Contracts/router_arb_abi.json'))  # Arbitrum's Endpoint
+    open('./router_arb_abi.json'))  # Arbitrum's Endpoint
 SwappableBridgeUniswapV3 = web3.to_checksum_address(
     '0x0A9f824C05A74F577A536A8A0c673183a872Dff4')
 Router = web3.to_checksum_address(
